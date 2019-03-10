@@ -1,0 +1,12 @@
+div.container {
+ margin-top: 20px;   
+}
+
+img {
+    max-height: 600px;
+    max-width: 300px;
+}
+
+p.card-text {
+    font-size: 1.2em;
+}
