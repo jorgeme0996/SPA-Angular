@@ -2,7 +2,7 @@
     <div class="card bg-dark text-white">
       <img [src]="hero.img" class="card-img" [alt]="hero.nombre">
       <div class="card-img-overlay">
-        <h3 class="card-title">{{hero.nombre}}</h3>
+        <h3 class="card-title">{{hero.nombre | uppercase }}</h3>
         <p class="card-text"><strong>{{hero.bio}}</strong></p>
         <p class="card-text">{{hero.aparicion}}</p>
       </div>

@@ -9,8 +9,8 @@ import {Router} from '@angular/router';
 })
 export class HerosComponent implements OnInit {
 
+  inputValue:string;
   heros:Hero[] = [];
-
   constructor( private _herosService:HerosService, private _router:Router ) { }
 
   ngOnInit() {
@@ -21,4 +21,8 @@ export class HerosComponent implements OnInit {
     this._router.navigate(['/hero', index]);
   }
 
+  searchHero($event){
+    console.log(this.inputValue);
+    
+  }
 }

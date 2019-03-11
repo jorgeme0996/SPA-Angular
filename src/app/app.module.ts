@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule,FormsModule} from "@angular/forms";
 
 // RUTAS
 import {APP_ROUTING} from './app.routes'
@@ -27,6 +28,9 @@ import { HeroComponent } from './components/hero/hero.component';
   imports: [
     BrowserModule,
     APP_ROUTING,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   providers: [
     HerosService

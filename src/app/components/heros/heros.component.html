@@ -1,4 +1,8 @@
 <div class="container">
+  <div class="rowSearchBar">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search hero" aria-label="Search" (keyup)="searchHero($event)" [(ngModel)]="inputValue">
+  </div>
+
   <h1>Heros of: <small>Marvel and DC</small></h1>
 
   <div class="card-columns">
@@ -7,7 +11,7 @@
       <div class="card-body">
         <h5 class="card-title">{{hero.nombre}}</h5>
         <p class="card-text">{{hero.bio}}</p>
-        <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
+        <p class="card-text"><small class="text-muted">{{hero.aparicion | date:'y'}}</small></p>
         <button (click)="viewHero(i)"
           type="button" class="btn btn-outline-primary btn-block">^
           Ver más...
